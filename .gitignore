@@ -1,0 +1,100 @@
+# Local Git metadata backup (not part of the published project)
+/.git-backups/
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# JavaScript / Expo dependencies and generated files
+node_modules/
+.expo/
+dist/
+web-build/
+coverage/
+*.tsbuildinfo
+expo-env.d.ts
+.metro-health-check*
+/mobile/android/
+/mobile/ios/
+.gradle/
+.kotlin/
+
+# Environment variables: publish templates only
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Credentials / signing material
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+credentials.json
+service-account*.json
+.aws/
+
+# Training data and private uploads
+/data/
+/datasets/
+/backend/data/
+/backend/datasets/
+/training/data/
+/training/datasets/
+uploads/
+
+# Model weights, exports, training outputs and experiment caches
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+*.safetensors
+*.engine
+*.mlpackage/
+*.mlmodel
+*.ncnn.bin
+runs/
+checkpoints/
+wandb/
+mlruns/
+*.cache
+
+# Archives and built applications
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.apk
+*.aab
+*.ipa
+
+# Logs, local databases, editor / OS files
+*.log
+*.sqlite
+*.sqlite3
+*.db
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.tmp
+*.bak

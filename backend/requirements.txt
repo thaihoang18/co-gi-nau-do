@@ -1,0 +1,8 @@
+# Direct runtime dependencies, pinned to the current development environment.
+fastapi==0.143.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+pydantic==2.14.0
+ultralytics==8.4.189
+pillow==13.0.0
+torch==2.14.1
