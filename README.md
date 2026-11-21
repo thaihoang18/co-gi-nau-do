@@ -107,39 +107,3 @@ npx.cmd tsc --noEmit
 npm.cmd run lint
 npx.cmd expo install --check
 ```
-
-## Quy ước dữ liệu và Git
-
-- Commit source code, cấu hình, dependency manifest/lockfile và tài liệu.
-- Không commit dữ liệu ảnh huấn luyện, ảnh người dùng, trọng số mô hình,
-  thư mục `runs`, cache, khóa bí mật hay môi trường cài đặt.
-- Lưu dataset và checkpoint lớn ở nơi riêng; ghi lại link nguồn, phiên bản,
-  giấy phép, quy tắc ánh xạ lớp và thay đổi annotation trong tài liệu.
-- File `.env.example` được commit; `.env.local` chỉ tồn tại trên máy cá nhân.
-- Mẫu ảnh `backend/sample.jpg` phục vụ thử nghiệm; kiểm tra nguồn và quyền
-  sử dụng trước khi phát hành công khai.
-
-## Commit và push lần đầu
-
-Repo dùng chung được quản lý từ thư mục gốc. Trước khi commit:
-
-```powershell
-git status --short
-git add .
-git diff --cached --stat
-git diff --cached --check
-git commit -m "chore: initialize Co Gi Nau Do project"
-```
-
-Sau khi tạo repository trống `co-gi-nau-do` trên GitHub, kết nối và push
-(thay URL mẫu bằng URL repository của bạn):
-
-```powershell
-git remote add origin https://github.com/YOUR_USERNAME/co-gi-nau-do.git
-git push -u origin main
-```
-
-Nếu đã có remote `origin`, kiểm tra bằng `git remote -v` trước khi thêm.
-Không cần dùng `--force`. Không có thao tác commit hoặc push tự động trong
-quá trình chuẩn bị này.
-# co-gi-nau-do
